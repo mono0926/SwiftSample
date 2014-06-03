@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mate" translatesAutoresizingMaskIntoConstraints="NO" id="j0Z-HF-ZGd">
+                                <rect key="frame" x="55" y="80" width="370" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="GcF-x1-1ak"/>
+                                    <constraint firstAttribute="height" constant="320" id="yVw-xU-aIb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-pe-ixI">
+                                <rect key="frame" x="103" y="430" width="274" height="30"/>
+                                <state key="normal" title="ラヴさんスタンプのWEBアルバムを開く">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openDidTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lw5-go-oAX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bn8-pe-ixI" secondAttribute="centerX" id="29w-Fc-vR5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bn8-pe-ixI" secondAttribute="bottom" constant="20" id="2Zw-Vf-6e5"/>
+                            <constraint firstAttribute="centerY" secondItem="j0Z-HF-ZGd" secondAttribute="centerY" id="cLl-Dw-oxG"/>
+                            <constraint firstAttribute="centerX" secondItem="j0Z-HF-ZGd" secondAttribute="centerX" id="zPp-2j-UlJ"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mate" width="370" height="320"/>
+    </resources>
+</document>
